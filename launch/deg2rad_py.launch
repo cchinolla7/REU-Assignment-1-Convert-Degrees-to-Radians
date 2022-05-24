@@ -1,0 +1,10 @@
+<launch>
+	<param name="/chat_deg" type="double" value="90"  />
+	<node pkg = "deg2rad_pkg" type = "get_deg.py" name = "talker" />
+	<node pkg	="deg2rad_pkg"
+		type	="deg2rad.py"
+		name	="listener"
+		output	="screen"
+	/>
+</launch>
+	
